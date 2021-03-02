@@ -169,7 +169,7 @@ func bootstrapConfig(c *envoy.BootstrapConfig) *envoy_bootstrap_v3.Bootstrap {
 				UpstreamConnectionOptions: &envoy_cluster_v3.UpstreamConnectionOptions{
 					TcpKeepalive: &envoy_core_v3.TcpKeepalive{
 						KeepaliveProbes:   protobuf.UInt32(3),
-						KeepaliveTime:     protobuf.UInt32(30),
+						KeepaliveTime:     protobuf.UInt32(5),
 						KeepaliveInterval: protobuf.UInt32(5),
 					},
 				},
