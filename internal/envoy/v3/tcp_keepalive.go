@@ -38,7 +38,7 @@ func TCPKeepaliveSocketOptions() []*envoy_core_v3.SocketOption {
 			Description: "TCP keep-alive initial idle time",
 			Level:       envoy.IPPROTO_TCP,
 			Name:        envoy.TCP_KEEPIDLE,
-			Value:       &envoy_core_v3.SocketOption_IntValue{IntValue: 45},
+			Value:       &envoy_core_v3.SocketOption_IntValue{IntValue: 5},
 			State:       envoy_core_v3.SocketOption_STATE_LISTENING,
 		},
 		// The time (in seconds) between individual keepalive probes.
